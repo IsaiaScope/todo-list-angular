@@ -1,0 +1,12 @@
+<mat-toolbar class="container" color="primary">
+  <button mat-button  [matMenuTriggerFor]="menu"  >
+    <mat-icon>filter_alt</mat-icon> Filter
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="filter('all')">Show All</button>
+    <button mat-menu-item (click)="filter('done')">Show Done</button>
+    <button mat-menu-item (click)="filter('todo')">Show ToDo</button>
+  </mat-menu>
+  <button mat-button (click)="openDialog()"><mat-icon>playlist_add</mat-icon> New Task</button>
+  <button mat-button (click)="searchEmit()"><mat-icon >search</mat-icon>Search</button>
+</mat-toolbar>

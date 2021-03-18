@@ -1,0 +1,15 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h2 class="title">Manage Your Task</h2>
+  <mat-form-field class="formInput" >
+    <textarea
+      matInput
+      placeholder="Write your task..."
+      formControlName="desc"
+      class="descInput"
+    ></textarea>
+  </mat-form-field>
+  <div class="model-action">
+    <button class="btn btn-close" (click)="close()">Close</button>
+    <button class="btn btn-done">Done</button>
+  </div>
+</form>

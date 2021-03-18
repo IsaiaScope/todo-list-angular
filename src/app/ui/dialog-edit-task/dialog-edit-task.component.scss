@@ -1,0 +1,48 @@
+.title {
+    text-align: center;
+    font-style: oblique;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+.formInput {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  .descInput {
+    height: 150px;
+    resize: none;
+  }
+}
+.model-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  & > * {
+    margin-right: 10px;
+  }
+  .btn {
+    padding: 10px 25px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 3px 0px;
+    color: rgb(255, 255, 255);
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .btn-close {
+    background: rgb(236, 76, 76);
+    border: 2px solid rgb(218, 57, 57);
+    &:hover {
+      background: rgb(207, 51, 51);
+    }
+  }
+  .btn-done {
+    background: rgb(56, 194, 56);
+    border: 2px solid rgb(31, 163, 31);
+    &:hover {
+      background: rgb(18, 158, 18);
+    }
+  }
+}

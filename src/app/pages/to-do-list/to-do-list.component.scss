@@ -1,0 +1,45 @@
+table {
+    width: 100%;
+}
+th.mat-header-cell, td.mat-cell {
+    padding: 5px !important;
+    /* border-bottom-width: 1px; */
+    font-family: 'Source Code Pro', monospace;
+}
+.mat-form-field{
+  width: 80%;
+}
+
+.center-middle{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+th.mat-header-cell {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(32, 29, 29);
+ /*  
+  background-color: blue; */
+}
+.emptyArray{
+  text-align: center;
+}
+.chebox-table{
+  padding: 5px; 
+}
+.inputFilter{
+  padding: 10px;
+}
+.edit-delete{
+  text-align: center;
+}
+.deleteIcon{
+  color: rgb(170, 23, 23);
+}
+.editIcon{
+  color:rgb(10, 10, 131);
+}
+
