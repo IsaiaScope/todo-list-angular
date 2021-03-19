@@ -21,6 +21,8 @@ import { ToDoListComponent } from './pages/to-do-list/to-do-list.component';
 import { HeaderComponent } from './ui/header/header.component';
 import { DialogEditTaskComponent } from './ui/dialog-edit-task/dialog-edit-task.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     FormsModule,
     MatToolbarModule,
-    MatInputModule
+    MatInputModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
